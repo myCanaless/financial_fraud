@@ -48,6 +48,7 @@ TRANSFER    4097
 </pre>
 
 Fraudulent Transactions 
+
 ![Fraud Transactions](https://github.com/myCanaless/financial_fruad/assets/96447448/e96e8e6d-d724-42ce-ae4e-b4c0882b36f3)
 
 
@@ -59,6 +60,7 @@ Fraudulent Transactions
 - converted 'step' to 'HourOfDay' assuming 'step' starts from hour 1
 
 Hourly Transactions 
+
 ![Hourly Transaction Activity](https://github.com/myCanaless/financial_fruad/assets/96447448/2c947748-d1b2-4056-a79a-b8191f451836)
 
 Box Plot of Hourly Transactions
