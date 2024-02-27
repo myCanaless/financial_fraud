@@ -21,8 +21,8 @@ With over 6,000,000 transactions totaling up to 1,144 billion and consist of 11 
 The types of transactions 
 
 ![Transaction Types](https://github.com/myCanaless/financial_fruad/assets/96447448/c02921f8-8b5a-49b9-b216-73e1bf9f2ffd)
-)
 
+The total amount 
 <pre>
 total_transaction_amount = df['amount'].sum()
 total = total_transaction_amount / 1e9
@@ -47,6 +47,9 @@ CASH_OUT    4116
 TRANSFER    4097
 </pre>
 
+Fraudulent Transactions 
+![Fraud Transactions](https://github.com/myCanaless/financial_fruad/assets/96447448/e96e8e6d-d724-42ce-ae4e-b4c0882b36f3)
+
 
 ## Fraud Detection Analysis 
 - Created a random sample of 10% of the dataset due to the large size of the dataset.
@@ -54,6 +57,13 @@ TRANSFER    4097
 - 'isFlaggedFraud' only flags a transaction as fraudulent if it is greater than 200,000. 
 - 'nameDest' and 'nameOrig' may have a large number of unique categorical values which can be computationally expensive. 
 - converted 'step' to 'HourOfDay' assuming 'step' starts from hour 1
+
+Hourly Transactions 
+![Hourly Transaction Activity](https://github.com/myCanaless/financial_fruad/assets/96447448/2c947748-d1b2-4056-a79a-b8191f451836)
+
+Box Plot of Hourly Transactions
+
+![Box Plot](https://github.com/myCanaless/financial_fruad/assets/96447448/02765d6e-2ae4-4171-a01e-a5ecd31b953a)
 
 
 ## Model Performance 
