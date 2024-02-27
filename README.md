@@ -22,6 +22,7 @@ The types of transactions
 
 ![Transaction Types](docs\Transactions Types.png)
 
+### Fraud occured in 'cash_out' and 'transfer'  
 <pre>
 # fraudulent transactions
 fraudulent_transactions = df[df['isFraud'] == 1]
@@ -31,8 +32,6 @@ fraudulent_transaction_distribution = fraudulent_transactions['type'].value_coun
 
 print(f"Distribution of Fraudulent Transactions by Transaction Type: {fraudulent_transaction_distribution}")
 </pre>
-
-# Fraud occured in 'cash_out' and 'transfer'  
 
 <pre>
 Distribution of Fraudulent Transactions by Transaction Type: type
