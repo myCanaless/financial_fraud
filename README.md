@@ -32,6 +32,8 @@ fraudulent_transaction_distribution = fraudulent_transactions['type'].value_coun
 print(f"Distribution of Fraudulent Transactions by Transaction Type: {fraudulent_transaction_distribution}")
 </pre>
 
+# Fraud occured in 'cash_out' and 'transfer'  
+
 <pre>
 Distribution of Fraudulent Transactions by Transaction Type: type
 CASH_OUT    4116
