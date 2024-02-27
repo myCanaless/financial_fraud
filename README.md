@@ -104,7 +104,7 @@ best_params = {
 }
 </pre>
 
-# f1 Score
+## f1 Score
 
 <pre>
 Optimized f1_score 
