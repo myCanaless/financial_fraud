@@ -50,9 +50,10 @@ Name: count, dtype: int64
 
 ## Model Performance 
 
-- Used a Gradient Boosting Classifier to received an accuracy of 0.9995725044949895
+- Ran a Gradient Boosting Classifier to received an accuracy of 0.9995725044949895
 
-- Used a RandomizedSearchCV to find the best parameters: 'n_estimators','learning_rate, and 'max_depth'
+- Ran a RandomizedSearchCV as the dataset was to large for a GridSearchCV
+- Using it to find the best parameters: 'n_estimators','learning_rate, and 'max_depth'
 
 <pre>
 # best parameters
