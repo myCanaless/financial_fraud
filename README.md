@@ -52,7 +52,7 @@ Name: count, dtype: int64
 
 - Ran a Gradient Boosting Classifier to received an accuracy of 0.9995725044949895
 
-- Ran a RandomizedSearchCV as the dataset was to large for a GridSearchCV
+- Ran a RandomizedSearchCV as the dataset was too large for a GridSearchCV
 - Using it to find the best parameters: 'n_estimators','learning_rate, and 'max_depth'
 
 <pre>
