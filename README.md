@@ -4,7 +4,7 @@ Analyzing a dataset of bank transactions and capturing as many fraudulent transa
 
 ## Dataset Description 
 
-With over 6,000,000 transactions totaling upto 1,144 billion and consist of 11 columns.  
+With over 6,000,000 transactions totaling up to 1,144 billion and consist of 11 columns.  
 
 - **Step**: Represents a unit of time in hours. This is essentially the timestamp of each transaction (e.g., hour 1, hour 2, ..., hour 534, etc.).
 - **Type**: Specifies the type of transaction.
@@ -30,7 +30,7 @@ total = total_transaction_amount / 1e9
 The total amount of transactions made is: 1144.39 billion.
 </pre>
 
-### Fraud occured in 'cash_out' and 'transfer'  
+### Fraud occurred in 'cash_out' and 'transfer'    
 <pre>
 # fraudulent transactions
 fraudulent_transactions = df[df['isFraud'] == 1]
@@ -44,7 +44,6 @@ fraudulent_transaction_distribution = fraudulent_transactions['type'].value_coun
 Distribution of Fraudulent Transactions by Transaction Type: type
 CASH_OUT    4116
 TRANSFER    4097
-Name: count, dtype: int64
 </pre>
 
 
