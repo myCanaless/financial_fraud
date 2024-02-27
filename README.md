@@ -22,6 +22,9 @@ The types of transactions
 
 ![Transaction Types](https://github.com/myCanaless/financial_fruad/assets/96447448/c02921f8-8b5a-49b9-b216-73e1bf9f2ffd)
 
+![Bar plot](https://github.com/myCanaless/financial_fruad/assets/96447448/f5954283-66fd-4c86-998e-83d4769bb29e)
+
+
 The total amount 
 <pre>
 total_transaction_amount = df['amount'].sum()
