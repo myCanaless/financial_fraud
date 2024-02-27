@@ -19,10 +19,10 @@ With over 6,000,000 transactions and consist of 11 columns.
 - **IsFraud**: Indicates whether a transaction was actually fraudulent, defined as a malicious attempt to transfer funds out of a victim’s account without their consent.
 
 The types of transactions 
-![Transaction Types](../docs/Transactions Types.png)
+
+![Transaction Types](docs\Transactions Types.png)
 
 <pre>
-```python
 # fraudulent transactions
 fraudulent_transactions = df[df['isFraud'] == 1]
 
@@ -30,9 +30,44 @@ fraudulent_transactions = df[df['isFraud'] == 1]
 fraudulent_transaction_distribution = fraudulent_transactions['type'].value_counts()
 
 print(f"Distribution of Fraudulent Transactions by Transaction Type: {fraudulent_transaction_distribution}")
-```
+</pre>
+
+<pre>
+Distribution of Fraudulent Transactions by Transaction Type: type
+CASH_OUT    4116
+TRANSFER    4097
+Name: count, dtype: int64
 </pre>
 
 
-
 ## Fraud Detection Analysis 
+- Created a random sample of 10% of the dataset due to the large size of the dataset.
+- Dropped columns: 'nameDest', 'nameOrig','isFlaggedFraud'
+- 'isFlaggedFraud' only flags a transaction as fraudulent if it is greater than 200,000. 
+- 'nameDest' and 'nameOrig' may have a large number of unique categorical values which can be computationally expensive. 
+- converted 'step' to 'HourOfDay' assuming 'step' starts from hour 1
+
+
+## Model Performance 
+
+- Used a Gradient Boosting Classifier to received an accuracy of 0.9995725044949895
+
+- Used a RandomizedSearchCV to find the best parameters: 'n_estimators','learning_rate, and 'max_depth'
+
+<pre>
+# best parameters
+best_params = {
+    'n_estimators': 199,
+    'learning_rate': 0.02428668179219408,
+    'max_depth': 5
+}
+</pre>
+
+# f1 Score
+
+<pre>
+Optimized f1_score 
+</pre>
+<pre>
+0.8169761273209549
+</pre>
