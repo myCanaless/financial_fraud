@@ -74,7 +74,24 @@ Box Plot of Hourly Transactions
 - Using it to find the best parameters: 'n_estimators','learning_rate, and 'max_depth'
 
 <pre>
-# best parameters
+param_dist = {
+    'n_estimators': randint(50, 300),  # number of trees between 50 and 500
+    'learning_rate': uniform(0.01, 0.1),  # prevents overfitting
+    'max_depth': randint(3, 10)  # max depth of each tree between 3 and 10 
+}
+
+random_search = RandomizedSearchCV(
+    estimator=gb_class, 
+    param_distributions=param_dist, 
+    n_iter=10, 
+    cv=5, 
+    random_state=42, 
+    scoring='accuracy', 
+    n_jobs=-1
+)
+</pre>
+Received a best score of 0.9995389733717996 & the best parameters:  
+<pre>
 best_params = {
     'n_estimators': 199,
     'learning_rate': 0.02428668179219408,
