@@ -4,7 +4,7 @@ Analyzing a dataset of bank transactions and capturing as many fraudulent transa
 
 ## Dataset Description 
 
-With over 6,000,000 transactions totaling up to 1,144 billion and consist of 11 columns.  
+With over 6,000,000 transactions totaling up to 1,144 billion and consist of 11 columns:  
 
 - **Step**: Represents a unit of time in hours. This is essentially the timestamp of each transaction (e.g., hour 1, hour 2, ..., hour 534, etc.).
 - **Type**: Specifies the type of transaction.
