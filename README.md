@@ -30,7 +30,6 @@ fraudulent_transactions = df[df['isFraud'] == 1]
 # the distribution of fraudulent transactions by transaction type
 fraudulent_transaction_distribution = fraudulent_transactions['type'].value_counts()
 
-print(f"Distribution of Fraudulent Transactions by Transaction Type: {fraudulent_transaction_distribution}")
 </pre>
 
 <pre>
