@@ -20,7 +20,8 @@ With over 6,000,000 transactions totaling up to 1,144 billion and consist of 11 
 
 The types of transactions 
 
-![Transaction Types](C:\Users\Michael\projects\financial_fraud_backup\docs\Transactions Types.png)
+![Transaction Types](https://github.com/myCanaless/financial_fruad/assets/96447448/c02921f8-8b5a-49b9-b216-73e1bf9f2ffd)
+)
 
 <pre>
 total_transaction_amount = df['amount'].sum()
